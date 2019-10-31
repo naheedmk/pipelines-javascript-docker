@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: naheedmkpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: naheedmkpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: naheedmkpipelinesjavascriptdocker 
+          image: crk8stest.azurecr.io/naheedmkpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
